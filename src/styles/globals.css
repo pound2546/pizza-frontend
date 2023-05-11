@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'react-toastify/dist/ReactToastify.css';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+:root {
+    --red: #e74c3c;
+    --black: #333;
+    --white: #fff;
+    --light-bg: #f5f5f5;
+    --light-color: #666;
+    --border: 0.1rem solid var(--light-color);
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    /* border: none; */
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    transition: 0.3s linear;
+}
+
+html {
+    --scroll-behavior: smooth !important;
+    scroll-behavior: smooth !important;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+    height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--red);
+}
+
+.bg {
+    width: 100%;
+    background: url("../../public/images/home-bg.jpg");
+    background-size: cover;
+}
