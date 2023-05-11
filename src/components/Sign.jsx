@@ -68,6 +68,7 @@ const Sign = ({ acc, setAcc }) => {
             body: JSON.stringify({
                 username: user,
                 password: pass1,
+                role: "user"
             }),
         })
         .then(res => res.json())
